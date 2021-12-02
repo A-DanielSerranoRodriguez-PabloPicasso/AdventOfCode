@@ -112,19 +112,17 @@ public class Part2 {
 				"forward 6", "forward 9", "forward 3", "down 5", "down 2", "down 8", "up 9", "up 8", "down 8",
 				"forward 4", "up 5", "forward 1", "up 4", "down 1", "forward 2" };
 
-//		String[] array = { "forward 5", "down 5", "forward 8", "up 3", "down 8", "forward 2" }; /* = 900 */
+//		String[] array = { "forward 5", "down 5", "forward 8", "up 3", "down 8", "forward 2" }; /*= 900*/
 		int hori = 0, depth = 0, aim = 0, total;
 
 		for (int i = 0; i < array.length; i++) {
 			String[] a = array[i].split(" ");
 			switch (a[0]) {
 			case "up":
-//				depth -= Integer.parseInt(a[1]);
 				aim -= Integer.parseInt(a[1]);
 				break;
 
 			case "down":
-//				depth += Integer.parseInt(a[1]);
 				aim += Integer.parseInt(a[1]);
 				break;
 
